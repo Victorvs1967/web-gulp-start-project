@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  @@include("./include/header.html")
+
+  <h1>Main Page</h1>
+  <h3>Hello everybody!</h3>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum totam deleniti hic eligendi fugiat voluptates, adipisci iste quod veniam, harum tempore quia quo deserunt!</p>
+  
+  @@loop("./include/news-item.html", "../../data/news.json")
+  @@include("./include/footer.html")
+  
+</body>
+</html>

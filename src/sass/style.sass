@@ -1,0 +1,27 @@
+@use './include/base'
+@import ./include/mixins
+@import ./include/vars
+
+.container
+  height: 100%
+  padding: 4rem
+  background-color: $base-background-color
+  color: $base-color
+
+  @include phone
+    background-color: $phone-background-color
+    color: $phone-color
+
+.news
+ display: flex
+ align-items: center
+ gap: 2rem
+
+.title
+ margin: 1rem 0
+
+img
+  @include phone
+    margin: 0 30%
+
+@import ./include/media

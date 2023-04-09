@@ -1,0 +1,14 @@
+extends ./layout/app
+
+block page 
+  include include/header
+  main.container
+    h1.title Main Page
+    img(src="./img/me-hero.png", alt="image", width="40%")
+    ul 
+      each item in news 
+        li.news
+          h4= item.name
+          span= item.body
+
+  include include/footer
